@@ -141,7 +141,7 @@ class Mobile_Collapse_Btn {
 
 
 const homepage_vns_url = "./assets/json/vns_collection.json";
-const vns_btn_name_template = "${VNS_tag}";
+const vns_btn_name_template = "${VNS_clustername}";
 let MNav = new Mobile_Nav(homepage_vns_url, vns_btn_name_template, MN_callback);
 
 export { 

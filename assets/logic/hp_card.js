@@ -165,12 +165,13 @@ class Homepage_Card {
         let card_frontImg_node = document.createElement("div");
         var num = this.parameters["card_id"];
         // console.log (this.parameters["card_id"]);
-        var newnum = num%3;
-        let front_gif_html = `<img class="card-img front-gif" src="./assets/hp_front_gif/front_${this.parameters["card_id"]}.gif" alt="./assets/image/fail_loading.svg">`;  // 缺少正面gif
-        let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${newnum}.png">`  // 缺少正面预览png
+        
+        // let front_gif_html = `<img class="card-img front-gif" src="./assets/hp_front_gif/front_${this.parameters["card_id"]}.gif" alt="./assets/image/fail_loading.svg">`;  // 缺少正面gif
+        let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
 
         card_frontImg_node.classList.add("card-frontImg");
-        card_frontImg_node.innerHTML = front_gif_html + front_preview_html;
+        // card_frontImg_node.innerHTML = front_gif_html + front_preview_html;
+        card_frontImg_node.innerHTML = front_preview_html;
 
         return card_frontImg_node;
     }
@@ -235,7 +236,7 @@ class Homepage_Card {
         let card_frontBody_titleHtml = "";
         let card_frontBody_textHtml = "";
         let card_body_front_textArray = [
-            this.parameters["how"],
+            this.parameters["source"],
             this.parameters["year"],
             this.parameters["link"]
         ];
@@ -375,7 +376,8 @@ Homepage_Card.prototype._bindEvents = function () {
 
     // card footer URL
     $(card_inner_node.querySelector(".card-footer a")).tooltip({ title: "watch full video" });
-
+    
+    //鼠标hover的时候，动图gif出现并播放
     // front gif static preview
     front_img.addEventListener("mouseover", () => {
         front_img.querySelector("img.front-gif").style.visibility = "none";
