@@ -336,7 +336,7 @@ class Homepage_Card {
 
         card_footer_node.innerHTML = left_html;
         card_footer_bottom_node.innerHTML =  card_footer_bottom_icon_html + card_footer_bottom_html;
-        card_footer_node.appendChild(card_footer_bottom_node);
+        // card_footer_node.appendChild(card_footer_bottom_node);
 
         return card_footer_node;
     }
