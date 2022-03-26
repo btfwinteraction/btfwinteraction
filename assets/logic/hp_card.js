@@ -119,41 +119,41 @@ class Homepage_Card {
         return card_header_node;
     }
 
-    _createCard_frontBody () {
-        let card_body_node = document.createElement("div");
-        // let card_frontBody_titleHtml = "";
-        let card_frontBody_textHtml = "";
-        // let card_body_front_textArray = [
-        //     this.parameters["how"], this.parameters["why"], this.parameters["AVT_tag"]
-        // ];
+    // _createCard_frontBody () {
+    //     let card_body_node = document.createElement("div");
+    //     // let card_frontBody_titleHtml = "";
+    //     let card_frontBody_textHtml = "";
+    //     // let card_body_front_textArray = [
+    //     //     this.parameters["how"], this.parameters["why"], this.parameters["AVT_tag"]
+    //     // ];
 
-        let card_body_front_text = [
-            this.parameters["how"]
-        ];
+    //     let card_body_front_text = [
+    //         this.parameters["how"]
+    //     ];
 
-        card_body_node.classList.add("card-body");
+    //     card_body_node.classList.add("card-body");
 
-        Homepage_Card.card_body_front_titleArray.forEach((title, i, titleList) => {
-            if(card_body_front_textArray[i] === "") {
-                return ;
-            }
-            // card_frontBody_titleHtml = `<div class="card-body-subtitle">${title}</div>`;
-            card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
-            card_body_node.innerHTML  += card_frontBody_textHtml; 
-        });
+    //     Homepage_Card.card_body_front_titleArray.forEach((title, i, titleList) => {
+    //         if(card_body_front_textArray[i] === "") {
+    //             return ;
+    //         }
+    //         // card_frontBody_titleHtml = `<div class="card-body-subtitle">${title}</div>`;
+    //         card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
+    //         card_body_node.innerHTML  += card_frontBody_textHtml; 
+    //     });
 
-        // 原版
-        // Homepage_Card.card_body_front_titleArray.forEach((title, i, titleList) => {
-        //     if(card_body_front_textArray[i] === "") {
-        //         return ;
-        //     }
-        //     card_frontBody_titleHtml = `<div class="card-body-subtitle">${title}</div>`;
-        //     card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
-        //     card_body_node.innerHTML  += (card_frontBody_titleHtml + card_frontBody_textHtml); 
-        // });
+    //     // 原版
+    //     // Homepage_Card.card_body_front_titleArray.forEach((title, i, titleList) => {
+    //     //     if(card_body_front_textArray[i] === "") {
+    //     //         return ;
+    //     //     }
+    //     //     card_frontBody_titleHtml = `<div class="card-body-subtitle">${title}</div>`;
+    //     //     card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
+    //     //     card_body_node.innerHTML  += (card_frontBody_titleHtml + card_frontBody_textHtml); 
+    //     // });
         
-        return card_body_node;
-    }
+    //     return card_body_node;
+    // }
     /**
      * front
     * <div class="card-frontImg">
@@ -228,13 +228,18 @@ class Homepage_Card {
         </p>
     </div>
     */
+
+   //卡片的浅色部分
     _createCard_frontBody () {
         let card_body_node = document.createElement("div");
         let card_frontBody_titleHtml = "";
         let card_frontBody_textHtml = "";
         let card_body_front_textArray = [
-            this.parameters["how"]
+            this.parameters["how"],
+            this.parameters["year"],
+            this.parameters["link"]
         ];
+        console.log(this.parameters["link"])
 
         card_body_node.classList.add("card-body");
 
@@ -242,10 +247,23 @@ class Homepage_Card {
             if(card_body_front_textArray[i] === "") {
                 return ;
             }
+            if(i==0){
+                card_frontBody_textHtml = `<p class="card-body-text"><b>Source: </b>${card_body_front_textArray[i]}</p>`;
+                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                return;
+            }
+            if(i==1){
+                card_frontBody_textHtml = `<p class="card-body-text"><b>Year: </b>${card_body_front_textArray[i]}</p>`;
+                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                return;
+            }
 
-            // card_frontBody_titleHtml = `<div class="card-body-subtitle">${title}</div>`;
-            card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
-            card_body_node.innerHTML  += (card_frontBody_titleHtml + card_frontBody_textHtml); 
+            if(i==2){
+                card_frontBody_textHtml = `<p class="card-body-text"><b>Link: </b><a classname="caselink" href=${card_body_front_textArray[i]}, target="_blank">URL 🔗</a></p>`;
+                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                return;
+            }
+
         });
         
         return card_body_node;
@@ -324,7 +342,9 @@ class Homepage_Card {
     }
 }
 
-Homepage_Card.card_body_front_titleArray = ["HOW"];
+
+//这里把card的json传进来了
+Homepage_Card.card_body_front_titleArray = ["HOW","year","link"];
 Homepage_Card.caption_keyArr = ["Source", "Year", "Category", "Subcategory"];
 
 Homepage_Card.prototype._bindEvents = function () {
@@ -423,7 +443,8 @@ class Homepage_Reminder {
         this._VNS_desc = VNS_desc + "";
         this._VNS_clustername = VNS_clustername + "";
     }
-
+    
+    //在这里创建主页中C1等大标题
     _createReminder (methodToReminderTitle = str => str) {
         let reminder_node = document.createElement("div");
         let reminder_bg_node = document.createElement("div");
@@ -434,6 +455,7 @@ class Homepage_Reminder {
         let reminder_title_html = `<span class="reminder-title">${methodToReminderTitle(this._VNS_clustername)}&nbsp;</span>
             <span class='reminder-sum'>(${this._VNS_num})</span>
             <span class='reminder-sum-s'>SUM: ${this._VNS_num}</span>`;
+        
 
         reminder_node.classList.add("display-reminder");
         reminder_bg_node.classList.add("reminder-bg");

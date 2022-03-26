@@ -1,6 +1,9 @@
 /* gathering all sass files */
 /* font size, weight */
 /* color */
+
+
+
 .vns-default,
 .default .modal-header,
 .default .modal-footer,
@@ -722,7 +725,7 @@ footer .footer-text {
 .card-deck .card-body {
   color: #000000;
   padding: 0 1rem;
-  margin: 1.5rem 0;
+  margin: 1.1rem 0;
   text-align: left;
   overflow-y: auto;
   /*display:flex;
@@ -739,9 +742,13 @@ footer .footer-text {
 }
 
 .card-deck .card-body-text {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.3rem;
+}
+
+.card-deck .card-body-text a{
+  color: #007DFF;
 }
 
 .card-deck .card-body-caption > * {
@@ -880,7 +887,7 @@ footer .footer-text {
 /*设置卡片高度*/
 .card-inner {
   position: relative;
-  height: 26.5rem;
+  height: 28rem;
 }
 
 .card-inner .front,

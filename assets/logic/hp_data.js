@@ -158,10 +158,11 @@ class DisplayQueue {
 
 
 class DisplayQueueMember extends Homepage_Reminder {
-    constructor ({ VNS_tag, VNS_desc, VNS_num, VNS_clustername }, cards_list = [], next_tag = "") {
+    constructor ({ VNS_tag, VNS_desc, VNS_num, VNS_clustername }, cards_list = [], next_tag = "", next_clustername = "") {
         super ({ VNS_tag, VNS_desc, VNS_num, VNS_clustername });
         this._cards_list = cards_list;
         this._next_tag = next_tag;
+        this._next_clustername = next_clustername;
     }
 
     get_VNS_tag () {
@@ -371,6 +372,8 @@ const FILTER_KEYWORD_QUEUE = new CardsFilter("filtering keyword queue");
 function _create_display_subjects (display_url) {
 
     $.ajaxSettings.async = false;
+
+    //在这里读取json文件中的数据 
     $.getJSON(display_url, json => {
 
         let next_tag = "";
@@ -380,7 +383,8 @@ function _create_display_subjects (display_url) {
             let display_reminder_subject = new DisplayQueueMember({
                 VNS_tag: json_item["VNS_tag"],
                 VNS_desc: json_item["VNS_desc"],
-                VNS_num: json_item["VNS_num"]
+                VNS_num: json_item["VNS_num"],
+                VNS_clustername: json_item["VNS_clustername"]
             });
             next_tag = (i + 1 < jsonArr.length) ? jsonArr[i + 1]["VNS_tag"]: "";
             display_reminder_subject.set_next_tag(next_tag);
