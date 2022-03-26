@@ -13,10 +13,10 @@ class Homepage_Panel {
         this._btn_queue = [];  // save btn items
         this._click_event_callback = click_event_callback;
         this._global_event_callback = global_event_listener || function() {};
-        if(this._btn_json_url.substring(this._btn_json_url.length-5) !== ".json") {
-            console.error("Please check your URL format (.JSON)!");
-            return ;
-        }
+        // if(this._btn_json_url.substring(this._btn_json_url.length-7) !== ".json") {
+        //     console.error("Please check your URL format (.JSON)!");
+        //     return ;
+        // }
     }
 
     _createPanel (extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName) {
@@ -194,8 +194,8 @@ Homepage_Panel.prototype.appendTo = function (parentNode, extraNode_html, extraC
     </a>
   * */
 const homepage_vns_url = "./assets/json/vns_collection.json";
-const vns_panel_title = "Affects";
-const vns_btn_name_template = "${VNS_name} (${VNS_num})";
+const vns_panel_title = "Design Pattern";
+const vns_btn_name_template = "${VNS_clustername} (${VNS_num})";
 const vns_panel_name = "scrollSpy";
 let VNS_panel = new Homepage_Panel(homepage_vns_url, vns_panel_title, vns_btn_name_template, 
     vns_panel_name, VNS_click_callback, VNS_scroll_callback);

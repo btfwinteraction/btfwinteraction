@@ -242,6 +242,7 @@ function Homepage_ex_loading() {
 
     setTimeout (() => {
     //这里我想通过找到名字为el-Pie-chart的div盒子，然后在这个盒子的后面加上h3标题Chart Types
+    console.log ('新增代码');
 
     var chart_node = document.getElementsByClassName("sidebar-panel-group");
     console.log(chart_node);

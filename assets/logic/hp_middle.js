@@ -63,7 +63,7 @@ export const VNS_scroll_callback = function (panel_node) {
 
         const panel_node = document.querySelector(".sidebar-panel-group");
         // let scrollBar_top = CARD_DISPLAY_NODE.scrollTop + 5 + CARD_DISPLAY_NODE.offsetHeight * 0.5;
-        let scrollBar_top = CARD_DISPLAY_NODE.parentElement.scrollTop + 5 + CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5;
+        let scrollBar_top = CARD_DISPLAY_NODE.parentElement.scrollTop + 7 + CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5;
         
         panel_node.querySelectorAll(".sidebar-btn:not(.disabled)").forEach((btn_node, i, btnList) => {
             // console.log(btn_node)

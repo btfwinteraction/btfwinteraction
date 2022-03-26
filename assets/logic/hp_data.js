@@ -139,10 +139,7 @@ class DisplayQueue {
     pushCard (card_subject) {
         let VNS_tag = card_subject._get_param("VNS_tag");
         if(this.keys().indexOf(VNS_tag) < 0) {
-            console.
-
-
-            error(`We don't have VNS_tag: ${VNS_tag} here in the queue.`);
+            console.error(`We don't have VNS_tag: ${VNS_tag} here in the queue.`);
             return false;
         }
         this._queue[VNS_tag][0]._pushCard(card_subject);
@@ -161,8 +158,8 @@ class DisplayQueue {
 
 
 class DisplayQueueMember extends Homepage_Reminder {
-    constructor ({ VNS_tag, VNS_desc, VNS_num }, cards_list = [], next_tag = "") {
-        super ({ VNS_tag, VNS_desc, VNS_num });
+    constructor ({ VNS_tag, VNS_desc, VNS_num, VNS_clustername }, cards_list = [], next_tag = "") {
+        super ({ VNS_tag, VNS_desc, VNS_num, VNS_clustername });
         this._cards_list = cards_list;
         this._next_tag = next_tag;
     }
@@ -179,6 +176,22 @@ class DisplayQueueMember extends Homepage_Reminder {
     get_next_tag () {
         return this._next_tag;
     }
+
+    get_VNS_clustername () {
+        return this._VNS_clustername || "";
+    }
+
+    set_next_clustername (VNS_clustername = "") {
+        this._next_clustername = VNS_clustername;
+        return true;
+    }
+
+    get_next_clustername () {
+        return this._next_clustername;
+    }
+
+
+
 
     _set_head () {
         if(this._VNS_tag !== "") {

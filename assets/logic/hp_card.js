@@ -5,7 +5,7 @@ import { vns_method_to_btn_name } from './anicard.js';
 // homepage card class
 class Homepage_Card {
     constructor(parameters = { 
-        card_id, card_title, VNS_tag, VNS_name, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why, 
+        card_id, card_title, VNS_tag, VNS_clustername, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why, 
         eg_title, eg_source, eg_url, eg_year, eg_category, eg_subcategory
     }) {
         this.parameters = {};
@@ -57,7 +57,6 @@ class Homepage_Card {
         return "";
     }
 
-
     _get_param(param_key) {
         param_key = param_key + "" || "card_id";
         if(Object.keys(this.parameters).indexOf(param_key) < 0) {
@@ -86,12 +85,12 @@ class Homepage_Card {
         let title_html = `<div class="header-text-title">${vns_method_to_btn_name(this.parameters["card_title"])}</div>`;
 
         //用el_tag1作为盒子名称
-        let classnewIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag1"].replace(/\s+/g, "-")}"></div>`;
-        let classnew_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag1"])}</div>`;
+        //let classnewIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag1"].replace(/\s+/g, "-")}"></div>`;
+        //let classnew_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag1"])}</div>`;
 
         //直接用el_tag2作为盒子名称
-        let classIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag2"].replace(/\s+/g, "-")}"></div>`;
-        let class_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag2"])}</div>`;
+        //let classIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag2"].replace(/\s+/g, "-")}"></div>`;
+        //let class_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag2"])}</div>`;
         
         // else if (this.parameters["VNS_ambiguity"] == 0) {
         //     let classnewIcon_html = `<div class="test"></div>`;
@@ -102,16 +101,15 @@ class Homepage_Card {
         card_header_node.classList.add("card-header", `el-${this.parameters["EL_tag1"].replace(/\s+/g, "-")}`);
         header_text_node.classList.add("header-text");
         header_classification_node.classList.add("header_classification");
-        // header_symbol_node.classList.add("header-symbol");
 
         header_text_node.innerHTML = title_html;
 
-        if (this.parameters["VNS_ambiguity"] == 1){
-            header_classification_node.innerHTML = classnewIcon_html + classnew_html + classIcon_html + class_html;
-        }
-        else{
-            header_classification_node.innerHTML = classnewIcon_html + classnew_html;
-        }
+        // if (this.parameters["VNS_ambiguity"] == 1){
+        //     header_classification_node.innerHTML = classnewIcon_html + classnew_html + classIcon_html + class_html;
+        // }
+        // else{
+        //     header_classification_node.innerHTML = classnewIcon_html + classnew_html;
+        // }
         
 
         // console.log (this.parameters["VNS_ambiguity"]);
@@ -166,7 +164,7 @@ class Homepage_Card {
     _createCard_frontImg () {
         let card_frontImg_node = document.createElement("div");
         var num = this.parameters["card_id"];
-        console.log (this.parameters["card_id"]);
+        // console.log (this.parameters["card_id"]);
         var newnum = num%3;
         let front_gif_html = `<img class="card-img front-gif" src="./assets/hp_front_gif/front_${this.parameters["card_id"]}.gif" alt="./assets/image/fail_loading.svg">`;  // 缺少正面gif
         let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${newnum}.png">`  // 缺少正面预览png
@@ -419,11 +417,11 @@ Homepage_Card.prototype.appendTo = function (parentNode) {
 
 // homepage reminder class
 class Homepage_Reminder {
-    constructor({VNS_tag, VNS_desc, VNS_num, VNS_name}) {
+    constructor({VNS_tag, VNS_desc, VNS_num, VNS_clustername}) {
         this._VNS_tag = VNS_tag + "";
-        this._VNS_name = VNS_name + "";
         this._VNS_num = VNS_num + "";
         this._VNS_desc = VNS_desc + "";
+        this._VNS_clustername = VNS_clustername + "";
     }
 
     _createReminder (methodToReminderTitle = str => str) {
@@ -433,7 +431,7 @@ class Homepage_Reminder {
         let reminder_head_node = document.createElement("div");
         let reminder_desc_node = document.createElement("div");
         let reminder_symbol_html = `<span class="reminder-symbol"></span>`;
-        let reminder_title_html = `<span class="reminder-title">${methodToReminderTitle(this._VNS_name)}&nbsp;</span>
+        let reminder_title_html = `<span class="reminder-title">${methodToReminderTitle(this._VNS_clustername)}&nbsp;</span>
             <span class='reminder-sum'>(${this._VNS_num})</span>
             <span class='reminder-sum-s'>SUM: ${this._VNS_num}</span>`;
 

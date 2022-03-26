@@ -19,13 +19,12 @@
 .C1 .reminder-symbol{
   background-color: #E6E600 !important;
 }
-
-.card-header{
-  background-color: #F2F27F !important;
-
-}
 .C1 .front {
   background: transparent linear-gradient(180deg, #FAFACC 50%, #FFFFFF 80%) !important;
+}
+
+.C1 .card-header{
+  background-color: #F2F27F !important;
 }
 .C1 .story-card-body{
   background-color: #FAFACC;
@@ -36,65 +35,113 @@
 .C2 .modal-footer,
 .C2 .mobile-nav-symbol,
 .C2 .scrollSpy-btn-symbol,
-.C2 .reminder-symbol,
-.C2 .card-header {
+.C2 .reminder-symbol {
   background-color: #BEBADA !important;
 }
 .C2 .front {
   background: transparent linear-gradient(180deg, #F2F1F8 50%, #FFFFFF 80%) !important;
 }
+.C2 .card-header{
+  background-color: #DEDCEC;
+}
 .C2 .story-card-body{
   background-color: #F2F1F8;
 }
 
-.vns-tenderness,
-.tenderness .modal-header,
-.tenderness .modal-footer,
-.tenderness .mobile-nav-symbol,
-.tenderness .scrollSpy-btn-symbol,
-.tenderness .reminder-symbol,
-.tenderness .card-header {
-  background-color: #B8E4F9 !important;
+.vns-C3,
+.C3 .modal-header,
+.C3 .modal-footer,
+.C3 .mobile-nav-symbol,
+.C3 .scrollSpy-btn-symbol,
+.C3 .reminder-symbol {
+  background-color: #FB8072 !important;
 }
-.tenderness .front {
-  background: transparent linear-gradient(180deg, #F1FAFE 50%, #FFFFFF 80%) !important;
+.C3 .front {
+  background: transparent linear-gradient(180deg, #FEE6E3 50%, #FFFFFF 80%) !important;
 }
-.tenderness .story-card-body{
-  background-color: #F1FAFE;
+.C3 .card-header{
+  background-color: #FDBFB8;
+}
+.C3 .story-card-body{
+  background-color: #FEE6E3;
+}
+
+.vns-C4,
+.C4 .modal-header,
+.C4 .modal-footer,
+.C4 .mobile-nav-symbol,
+.C4 .scrollSpy-btn-symbol,
+.C4 .reminder-symbol {
+  background-color: #80B1D3 !important;
+}
+.C4 .front {
+  background: transparent linear-gradient(180deg, #E6EFF6 50%, #FFFFFF 80%) !important;
+}
+.C4 .card-header{
+  background-color: #BFD8E9;
+}
+.C4 .story-card-body{
+  background-color: #E6EFF6;
 }
 
 
-.vns-surprise,
-.surprise .modal-header,
-.surprise .modal-footer,
-.surprise .mobile-nav-symbol,
-.surprise .scrollSpy-btn-symbol,
-.surprise .reminder-symbol,
-.surprise .card-header {
-  background-color: #E1D8FF !important;
+.vns-C5,
+.C5 .modal-header,
+.C5 .modal-footer,
+.C5 .mobile-nav-symbol,
+.C5 .scrollSpy-btn-symbol,
+.C5 .reminder-symbol {
+  background-color: #FDB462 !important;
 }
-.surprise .front {
-  background: transparent linear-gradient(180deg, #F9F7FF 50%, #FFFFFF 80%) !important;
+.C5 .front {
+  background: transparent linear-gradient(180deg, #FFF0DF 50%, #FFFFFF 80%) !important;
 }
-.surprise .story-card-body{
-  background-color: #F9F7FF;
+.C5 .card-header{
+  background-color: #FED9B0;
+}
+.C5 .story-card-body{
+  background-color: #FFF0DF;
 }
 
-.vns-excitement,
-.excitement .modal-header,
-.excitement .modal-footer,
-.excitement .mobile-nav-symbol,
-.excitement .scrollSpy-btn-symbol,
-.excitement .reminder-symbol,
-.excitement .card-header {
-  background-color: #FFDAB4 !important;
+.vns-C6,
+.C6 .modal-header,
+.C6 .modal-footer,
+.C6 .mobile-nav-symbol,
+.C6 .scrollSpy-btn-symbol,
+.C6 .reminder-symbol {
+  background-color: #B3DE69 !important;
 }
-.excitement .front {
-  background: transparent linear-gradient(180deg, #FFF8F0 50%, #FFFFFF 80%) !important;
+.C6 .front {
+  background: transparent linear-gradient(180deg, #F0F9E1 50%, #FFFFFF 80%) !important;
 }
-.excitement .story-card-body{
-  background-color: #FFF8F0;
+.C6 .card-header{
+  background-color: #D8EEB3;
 }
+.C6 .story-card-body{
+  background-color: #F0F9E1;
+}
+
+.vns-Observations,
+.Observations .modal-header,
+.Observations .modal-footer,
+.Observations .mobile-nav-symbol,
+.Observations .scrollSpy-btn-symbol,
+.Observations .reminder-symbol {
+  background-color: #ACACAC !important;
+}
+.Observations .front {
+  background: transparent linear-gradient(180deg, #EEEEEE 50%, #FFFFFF 80%) !important;
+}
+.Observations .card-header{
+  background-color: #D5D5D5;
+}
+.Observations .story-card-body{
+  background-color: #EEEEEE;
+}
+
+
+
+
 
 /* letter spacing */
 /* EL symbol for sidebar filter panel */
@@ -115,7 +162,7 @@
   width: 15px;
   height: 15px;
 }
-.el-knowledge .filter-btn-symbol  {
+.el-Knowledge .filter-btn-symbol  {
   background-image: url("../icon/knowledge.svg");
   background-position: 1.5px 1.5px;
   background-repeat: no-repeat;
@@ -131,29 +178,29 @@
 }
 
 .el-Establisher .filter-btn-symbol  {
-  background-image: url("../icon/data.svg");
-  background-position: 1px 2px;
+  background-image: url("../icon/Establisher.svg");
+  background-position: 3px 1px;
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
 }
 
 .el-Initial .filter-btn-symbol  {
-  background-image: url("../icon/information.svg");
-  background-position: 1px 3px;
+  background-image: url("../icon/Initial.svg");
+  background-position: 1px 1.5px;
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
 }
 .el-Peak .filter-btn-symbol  {
-  background-image: url("../icon/knowledge.svg");
-  background-position: 1.5px 1.5px;
+  background-image: url("../icon/Peak.svg");
+  background-position: 1.5px 0px;
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
 }
 .el-Release .filter-btn-symbol  {
-  background-image: url("../icon/wisdom.svg");
+  background-image: url("../icon/Release.svg");
   background-position: 1.5px 1.5px;
   background-repeat: no-repeat;
   width: 15px;
@@ -810,7 +857,7 @@ footer .footer-text {
 }
 
 .header-text-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.75rem;
   margin: 0 auto;
@@ -1264,12 +1311,12 @@ footer .footer-text {
 
 .sidebar-panel-group .sidebar-btn:hover {
   border-color: transparent;
-  background-color: #EEF9E5;
+  background-color: #F1F1F180;
 }
 
 @media (max-width: 576px) {
   .sidebar-panel-group .sidebar-btn:hover {
-    border: 1px solid #EEF9E5;
+    border: 1px solid #F1F1F180;
   }
   .sidebar-panel-group .sidebar-btn:hover.filter-btn:not(.active) {
     background-color: transparent;
