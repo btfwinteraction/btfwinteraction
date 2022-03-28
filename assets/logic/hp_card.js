@@ -240,7 +240,7 @@ class Homepage_Card {
             this.parameters["year"],
             this.parameters["link"]
         ];
-        console.log(this.parameters["link"])
+        
 
         card_body_node.classList.add("card-body");
 
@@ -376,7 +376,7 @@ Homepage_Card.prototype._bindEvents = function () {
 
     // card footer URL
     $(card_inner_node.querySelector(".card-footer a")).tooltip({ title: "watch full video" });
-    
+
     //鼠标hover的时候，动图gif出现并播放
     // front gif static preview
     front_img.addEventListener("mouseover", () => {
