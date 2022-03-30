@@ -883,5 +883,20 @@
     "link": "https://graphics.reuters.com/HEALTH-CORONAVIRUS/VACCINE-CALCULATOR/rlgvdgewwpo/",
     "source": "Reuters",
     "year": 2021
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Wisdom",
+    "EL_tag": "Initial,Wisdom",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C3",
+    "card_id": 57,
+    "card_title": "Without A Vaccine, Herd Immunity Won’t Save Us",
+    "how": "",
+    "link": "https://fivethirtyeight.com/features/without-a-vaccine-herd-immunity-wont-save-us/",
+    "source": "Fivethirtyeight",
+    "year": 2020
   }
 ]
