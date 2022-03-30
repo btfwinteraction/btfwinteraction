@@ -165,14 +165,32 @@ class Homepage_Card {
         let card_frontImg_node = document.createElement("div");
         var num = this.parameters["card_id"];
         // console.log (this.parameters["card_id"]);
+        var AVT_tag = this.parameters["AVT_tag"];
+        var VNS_tag = this.parameters["VNS_tag"]; 
+
+        if(AVT_tag==0){
+            let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
+            card_frontImg_node.classList.add("card-frontImg");
+            card_frontImg_node.innerHTML = front_preview_html;
+        }
+
+        if(AVT_tag==1){
+            if( VNS_tag == "Observations"){
+                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+                card_frontImg_node.classList.add("card-frontImg");
+                card_frontImg_node.innerHTML = front_preview_html;
+            }else if( VNS_tag == "C5"){
+                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+                card_frontImg_node.classList.add("card-frontImg");
+                card_frontImg_node.innerHTML = front_preview_html;
+            }else {
+                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
+                card_frontImg_node.classList.add("card-frontImg");
+                card_frontImg_node.innerHTML = front_preview_html;
+            }
+            
+        }
         
-        // let front_gif_html = `<img class="card-img front-gif" src="./assets/hp_front_gif/front_${this.parameters["card_id"]}.gif" alt="./assets/image/fail_loading.svg">`;  // 缺少正面gif
-        let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
-
-        card_frontImg_node.classList.add("card-frontImg");
-        // card_frontImg_node.innerHTML = front_gif_html + front_preview_html;
-        card_frontImg_node.innerHTML = front_preview_html;
-
         return card_frontImg_node;
     }
 
@@ -260,7 +278,7 @@ class Homepage_Card {
             }
 
             if(i==2){
-                card_frontBody_textHtml = `<p class="card-body-text"><b>Link: </b><a classname="caselink" href=${card_body_front_textArray[i]}, target="_blank">URL 🔗</a></p>`;
+                card_frontBody_textHtml = `<p class="card-body-text"><b>Link: </b><a classname="caselink" href=${card_body_front_textArray[i]}  target="_blank">URL 🔗</a></p>`;
                 card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
                 return;
             }

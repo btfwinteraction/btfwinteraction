@@ -5,28 +5,28 @@
     "VNS_clustername":"C1 · Golden Hook",
     "VNS_color":"#E6E600",
     "VNS_desc":"Using Golden Hook, a story is started with a personalized Establisher generated from readers’ personal data or knowledge. This pattern can only be found at the beginning of the story and serves as a hook to reveal unexpected findings and increase curiosity. ",
-    "VNS_num":9
+    "VNS_num":8
 },
 {"VNS_id":1,
     "VNS_tag":"C2",
     "VNS_clustername":"C2 · Kaleidoscope",
     "VNS_color":"#BEBADA",
     "VNS_desc":"Kaleidoscope is used at the Initial of a data story, where supporting facts are provided to reveal deeper insights into the core idea. When integrating this pattern, supporting facts require readers’ personal data as a supplement and then present the data as personalized visualization. In this way, readers are effectively involved in the process of reasoning. This design pattern serves the intent of persuading by delivering more convincing arguments backed with data provided by readers.",
-    "VNS_num":9
+    "VNS_num":12
 },
 {"VNS_id":2,
     "VNS_tag":"C3",
     "VNS_clustername":"C3 · Simulator",
     "VNS_color":"#FB8072",
     "VNS_desc":"Simulator uses visualization as the input interface for exploration in the Initial of a data story. Specifically, the visualization models a fact or a theory and exposes parameters that readers can manipulate to change the behavior of the simulation. By making a series of decisions, readers learn the fact or the theory by “experience” it themselves. In contrast to Kaleidoscope (C2), Simulator strengthens the arguments by encouraging readers to use trial and error rather then directly presenting the outcome to them. In this way, this pattern is able to engage readers into exploration and discovery and trigger self-reflection among them.",
-    "VNS_num":15
+    "VNS_num":5
 },
 {"VNS_id":3,
     "VNS_tag":"C4",
     "VNS_clustername":"C4 · Spotlight",
     "VNS_color":"#c0c96f",
     "VNS_desc":"Spotlight is applied at the Peak of a data story, where the major insight is shared with readers. With this pattern, the major insight is presented as a visualization, usually in a form of map, that encourages readers to explore. Specifically, the visualization asks for readers’ address and highlights the data points related to them. Compared to Kaleidoscope (C2) that uses personalized visualization, Spotlight first provides an overview and then allows readers to zoom in to obtain a closer view of interest. Spotlight commonly used in data stories around serious topics such as well-being and environment to support readers in relating individual lives to society. ",
-    "VNS_num":12
+    "VNS_num":7
 },
 {"VNS_id":4,
     "VNS_tag":"C5",
@@ -40,13 +40,13 @@
     "VNS_clustername":"C6 · Touchstone",
     "VNS_color":"#f5c8c0",
     "VNS_desc":"Touchstone reveals the major insight in the Peak of a data story by prompting readers to make a guess. Before showing actual data, Touchstone asks readers to predict it based on their knowledge. Then, readers are shown the visualization of the actual data against their prediction. Meanwhile, visual and textual annotations are added to the visualization to emphasis the difference between readers’ guess and the reality. In this way, readers are more likely to reflect on the gap and be impressed with the major insight. This design pattern can serves as a “touchstone”, by which the understanding of a fact or a concept can be tested.",
-    "VNS_num":15
+    "VNS_num":6
 },
 {"VNS_id":6,
     "VNS_tag":"Observations",
     "VNS_clustername":"Observations",
     "VNS_color":"#f5c8c0",
     "VNS_desc":"",
-    "VNS_num":15
+    "VNS_num":10
 }
 ]
