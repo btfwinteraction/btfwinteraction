@@ -450,7 +450,7 @@
     "year": 2018
   },
   {
-    "AVT_tag": 0,
+    "AVT_tag": 1,
     "Chart_tag": "Data",
     "EL_tag": "Initial,Data",
     "EL_tag1": "",
@@ -465,7 +465,7 @@
     "year": 2019
   },
   {
-    "AVT_tag": 0,
+    "AVT_tag": 1,
     "Chart_tag": "Wisdom",
     "EL_tag": "Initial,Wisdom",
     "EL_tag1": "",
@@ -570,7 +570,7 @@
     "year": 2020
   },
   {
-    "AVT_tag": 0,
+    "AVT_tag": 1,
     "Chart_tag": "Data",
     "EL_tag": "Initial,Data",
     "EL_tag1": "",
@@ -585,7 +585,7 @@
     "year": 2015
   },
   {
-    "AVT_tag": 0,
+    "AVT_tag": 1,
     "Chart_tag": "Wisdom",
     "EL_tag": "Initial,Wisdom",
     "EL_tag1": "",
