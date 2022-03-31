@@ -12,7 +12,7 @@
     "VNS_clustername":"C2 · Kaleidoscope",
     "VNS_color":"#BEBADA",
     "VNS_desc":"Kaleidoscope is used at the Initial of a data story, where supporting facts are provided to reveal deeper insights into the core idea. When integrating this pattern, supporting facts require readers’ personal data as a supplement and then present the data as personalized visualization. In this way, readers are effectively involved in the process of reasoning. This design pattern serves the intent of persuading by delivering more convincing arguments backed with data provided by readers.",
-    "VNS_num":12
+    "VNS_num":11
 },
 {"VNS_id":2,
     "VNS_tag":"C3",

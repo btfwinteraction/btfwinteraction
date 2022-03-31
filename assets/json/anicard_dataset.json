@@ -451,6 +451,21 @@
   },
   {
     "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Initial,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C2",
+    "card_id": 30,
+    "card_title": "Kan geboortebeperking het wereldwijde voedselprobleem oplossen? ",
+    "how": "",
+    "link": "https://www.volkskrant.nl/kijkverder/2018/wereldbevolking/?referrer=https%3A%2F%2Ft.co%2FOAoltOfopb",
+    "source": "De Volkskrant",
+    "year": 2019
+  },
+  {
+    "AVT_tag": 0,
     "Chart_tag": "Wisdom",
     "EL_tag": "Initial,Wisdom",
     "EL_tag1": "",
@@ -553,6 +568,21 @@
     "link": "https://www.nytimes.com/interactive/2020/07/31/travel/coronavirus-travel-risk.html",
     "source": "New York Times",
     "year": 2020
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Initial,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C2",
+    "card_id": 37,
+    "card_title": "Should Prison Sentences Be Based On Crimes That Haven’t Been Committed Yet",
+    "how": "",
+    "link": "https://fivethirtyeight.com/features/prison-reform-risk-assessment/",
+    "source": "Fivethirtyeight",
+    "year": 2015
   },
   {
     "AVT_tag": 0,

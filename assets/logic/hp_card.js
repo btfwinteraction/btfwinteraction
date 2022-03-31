@@ -183,6 +183,10 @@ class Homepage_Card {
                 let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
                 card_frontImg_node.classList.add("card-frontImg");
                 card_frontImg_node.innerHTML = front_preview_html;
+            }else if( VNS_tag == "C3"){
+                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+                card_frontImg_node.classList.add("card-frontImg");
+                card_frontImg_node.innerHTML = front_preview_html;
             }else {
                 let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
                 card_frontImg_node.classList.add("card-frontImg");
