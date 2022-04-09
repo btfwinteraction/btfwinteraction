@@ -1248,6 +1248,9 @@ footer .footer-text {
 .sidebar-panel {
   margin-top: 1.25rem;
 }
+.sidebar-panel#filter-panel {
+  margin-bottom: 2.5rem;
+}
 
 @media (max-width: 576px) {
   .sidebar-panel#scrollSpy-panel {
@@ -1255,6 +1258,7 @@ footer .footer-text {
   }
   .sidebar-panel#filter-panel {
     margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
   }
   .sidebar-panel#search-box {
     display: none;
