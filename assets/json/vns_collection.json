@@ -39,7 +39,7 @@
     "VNS_tag":"C6",
     "VNS_clustername":"C6 · Touchstone",
     "VNS_color":"#f5c8c0",
-    "VNS_desc":"Touchstone reveals the major insight in the Peak of a data story by prompting readers to make a guess. Before showing actual data, Touchstone asks readers to predict it based on their knowledge. Then, readers are shown the visualization of the actual data against their prediction. Meanwhile, visual and textual annotations are added to the visualization to emphasis the difference between readers’ guess and the reality. In this way, readers are more likely to reflect on the gap and be impressed with the major insight. This design pattern can serves as a “touchstone”, by which the understanding of a fact or a concept can be tested.",
+    "VNS_desc":"Touchstone helps reveal the major insight in the Peak of a data story by prompting readers to make a guess. Touchstone first asks readers to predict the reality based on their knowledge, and then show the visualization of the actual data against the prediction. In this way, readers are more likely to reflect on the gap and be impressed with the major insight.",
     "VNS_num":6
 },
 {"VNS_id":6,
