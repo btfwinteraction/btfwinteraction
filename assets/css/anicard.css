@@ -670,6 +670,8 @@ footer .footer-text {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   color: #000000;
+  /* min-height: 5.2rem;
+  height: auto; */
 
 }
 .card-deck .card-header .header_classification {
@@ -699,8 +701,8 @@ footer .footer-text {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 14rem;
-  min-height: 14rem;
+  height: 13rem;
+  min-height: 13rem;
   position: relative;
 }
 
@@ -884,10 +886,11 @@ footer .footer-text {
 .header-text-title {
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.75rem;
+  line-height: 1.68rem;
   margin: 0 auto;
   display: flex;
   justify-content:center;
+  /* padding-bottom: 0.5rem; */
 }
 
 .header-text-class {
@@ -905,7 +908,7 @@ footer .footer-text {
 /*设置卡片高度*/
 .card-inner {
   position: relative;
-  height: 30rem;
+  height: 28.5rem;
 }
 
 .card-inner .front,
