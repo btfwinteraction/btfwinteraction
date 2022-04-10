@@ -21,13 +21,13 @@
     "EL_tag1": "",
     "EL_tag2": "",
     "VNS_ambiguity": "",
-    "VNS_tag": "C5",
+    "VNS_tag": "C4",
     "card_id": 2,
-    "card_title": "America’s demographics are changing. How has your county shifted?",
+    "card_title": "Booze Calculator: What's Your Drinking Nationality",
     "how": "",
-    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
-    "source": "Washington Post",
-    "year": 2021
+    "link": "https://www.bbc.com/news/health-30500372",
+    "source": "BBC",
+    "year": 2017
   },
   {
     "AVT_tag": 0,
@@ -68,11 +68,11 @@
     "VNS_ambiguity": "",
     "VNS_tag": "C5",
     "card_id": 5,
-    "card_title": "Booze Calculator: What's Your Drinking Nationality",
+    "card_title": "America’s demographics are changing. How has your county shifted?",
     "how": "",
-    "link": "https://www.bbc.com/news/health-30500372",
-    "source": "BBC",
-    "year": 2017
+    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
+    "source": "Washington Post",
+    "year": 2021
   },
   {
     "AVT_tag": 0,
