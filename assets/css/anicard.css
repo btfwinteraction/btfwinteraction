@@ -621,12 +621,19 @@ footer .footer-text {
 .card-deck-single[name="card_10"] .card-header {
   background: transparent linear-gradient(90deg, #F2F27F 0%, #F2F27F 25%, #D5D5D5 75%, #D5D5D5 100%) 0% 0% no-repeat padding-box !important;
 }
+.card-deck-single[name="card_30"] .card-header {
+  background: transparent linear-gradient(90deg, #DEDCEC 0%, #DEDCEC 25%, #FDBFB8 75%, #FDBFB8 100%) 0% 0% no-repeat padding-box !important;
+}
+.card-deck-single[name="card_37"] .card-header {
+  background: transparent linear-gradient(90deg, #DEDCEC 0%, #DEDCEC 25%, #FDBFB8 75%, #FDBFB8 100%) 0% 0% no-repeat padding-box !important;
+}
 .card-deck-single[name="card_47"] .card-header {
   background: transparent linear-gradient(90deg, #DEDCEC 0%, #DEDCEC 25%, #FED9B0 75%, #FED9B0 100%) 0% 0% no-repeat padding-box !important;
 }
 .card-deck-single[name="card_52"] .card-header {
   background: transparent linear-gradient(90deg, #D8EEB3 0%, #D8EEB3 25%, #D5D5D5 75%, #D5D5D5 100%) 0% 0% no-repeat padding-box !important;
 }
+
 
 /* .card-deck-single[name="card_21"] .card-header {
   background: transparent linear-gradient(90deg, #efbd9c 0%, #efbd9c 35%, #e2cc6d 65%, #e2cc6d 100%) 0% 0% no-repeat padding-box !important;
@@ -666,7 +673,7 @@ footer .footer-text {
 
 }
 .card-deck .card-header .header_classification {
-  margin-top: 0.5rem; 
+  /* margin-top: 0.5rem;  */
   display: flex;
   justify-content:center;
 }
