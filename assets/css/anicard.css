@@ -1849,10 +1849,18 @@ footer .footer-text {
 }
 
 /* about页面中的一个小插图 */
-.about-part-img {
+.about-part-img-small {
   margin-top: 0.8rem;
   margin: 0.5rem auto 0.8rem;
   max-width: 10rem;
+}
+
+
+.about-part-img {
+  margin-top: 1.2rem;
+  margin: 1.2rem auto 0.8rem;
+  /* max-width: 10rem; */
+  max-width: 50rem;
 
 }
 
@@ -1863,6 +1871,21 @@ footer .footer-text {
   font-size: 0.75rem;
   font-weight: 400;
   color: #000000;
+}
+
+.about-para-text-title{
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.125rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.about-part-img-caption {
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  max-width: 60rem;
 }
 
 .about-large-bg {
