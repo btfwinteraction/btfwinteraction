@@ -1858,10 +1858,10 @@ footer .footer-text {
 
 .about-part-img {
   margin-top: 1.2rem;
-  margin: 1.2rem auto 0.8rem;
+  margin: 1rem auto 1rem;
   /* max-width: 10rem; */
-  max-width: 50rem;
-
+  max-width: 57rem;
+  
 }
 
 .about-para-text,
@@ -1869,23 +1869,27 @@ footer .footer-text {
 .about-title-text,
 .citation-format {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #000000;
+  text-align: justify;
 }
 
 .about-para-text-title{
-  font-size: 0.75rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 600;
   color: #000000;
   line-height: 1.125rem;
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  
 }
 .about-part-img-caption {
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: 0.5rem;
   max-width: 60rem;
+  color: #000000;
+  text-align: justify;
 }
 
 .about-large-bg {
@@ -1946,7 +1950,8 @@ footer .footer-text {
 
 .about-para-text, .about-para-text-s {
   line-height: 1.125rem;
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
 }
 
 @media screen and (max-width: 576px) {
