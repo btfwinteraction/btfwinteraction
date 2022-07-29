@@ -5,14 +5,14 @@
     "VNS_clustername":"C1 · Golden Hook",
     "VNS_color":"#E6E600",
     "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-    "VNS_num":8
+    "VNS_num":7
 },
 {"VNS_id":1,
     "VNS_tag":"C2",
     "VNS_clustername":"C2 · Kaleidoscope",
     "VNS_color":"#BEBADA",
     "VNS_desc":"Kaleidoscope is used at the Initial of a data story. This design pattern requires readers' personal data as a supplement to the supporting facts and then presents the data as personalized visualization. It serves the intent of persuading by delivering more convincing arguments backed with data provided by readers.",
-    "VNS_num":11
+    "VNS_num":10
 },
 {"VNS_id":2,
     "VNS_tag":"C3",
@@ -26,14 +26,14 @@
     "VNS_clustername":"C4 · Spotlight",
     "VNS_color":"#c0c96f",
     "VNS_desc":"Spotlight is applied at the Peak of a data story. With this pattern, the major insight is presented as a visualization, usually in a form of a map. Specifically, the visualization asks for readers' addresses and highlights the data points related to them. It is widely used in data stories around serious topics such as well-being and environment to support readers in relating individual lives to society. ",
-    "VNS_num":7
+    "VNS_num":8
 },
 {"VNS_id":4,
     "VNS_tag":"C5",
     "VNS_clustername":"C5 · Magic Mirror",
     "VNS_color":"#f5c8c0",
     "VNS_desc":"Magic Mirror is used at the Peak of a data story and can produce the most personalized story among all the patterns. Stories combined with it usually take the form of a quiz or a calculator, integrating readers' data or information to deliver a highly customized major insight.  This pattern helps reflect ``who you are'' and more importantly, provides personalized advice to improve one's current situation.",
-    "VNS_num":15
+    "VNS_num":16
 },
 {"VNS_id":5,
     "VNS_tag":"C6",
