@@ -67,6 +67,13 @@ window.onload = function () {
             if(tab_name === "about") {
                 callback = openAbout;
             }
+            if(tab_name === "downloads") {
+                callback = openDownloads;
+            }
+            
+            if(tab_name === "about2") {
+                callback = openAbout2;
+            }
 
             VISIT_PAGE(tab_name, callback);
         };
@@ -201,6 +208,25 @@ function openAbout() {
     $.ajax({
         // url: "https://jkalan6991.gitee.io/video-explorer/assets/static/about.html",
         url: "./assets/static/about.html",
+        type: "get",
+        contentType: "text/html",
+        dataType: "html",
+        success: function(res) {
+            document.querySelector("main").innerHTML = res;
+            $("#official-side").tooltip({ title: "learn more about iDVx Lab" });
+            downloads_loading();
+        }
+    });
+}
+
+function openAbout2() {
+    // 页面呈现loading
+    // document.querySelector("main").innerHTML = "";
+
+    // 界面异步加载
+    $.ajax({
+        // url: "https://jkalan6991.gitee.io/video-explorer/assets/static/about.html",
+        url: "./assets/static/about2.html",
         type: "get",
         contentType: "text/html",
         dataType: "html",
